@@ -5,7 +5,7 @@ import { AiFillFacebook } from "react-icons/ai";
 import { toast } from "react-hot-toast";
 // import LoadingOverlay from "../LoadingOverlay";
 
-const Auth = () => {
+const Auth = ({ connectWallet }) => {
   return (
     <div className="w-screen h-screen flex items-center justify-center bg-[#FAFAFA]">
       <div className="flex w-4/5 h-4/5">
@@ -26,6 +26,7 @@ const Auth = () => {
                 <button
                   type="submit"
                   className="bg-[#0095F6] py-3 px- text-white active:scale-95 transform transition w-48 disabled:bg-opacity-50 disabled:scale-100 rounded  font-semibold"
+                  onClick={connectWallet}
                 >
                   Connect Wallet
                 </button>
